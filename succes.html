@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "refresh" content = "7; url = http://127.0.0.1:5500/jaar%202/projecten/DutchDestinations/contact.html"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>DutchDestinations</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,45 +55,32 @@
         </nav>
 
     <!-- contact form -->
-    <section class="dark:bg-gray-900">
+    <section class="dark:bg-gray-900 mt-32">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <div class="flex relative flex-col items-center justify-center mb-10">
-                <h1 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Contact Us</h1>
-                <p class="text-2xl text-[#000000] rounded-md">Need help of do you have questions? We can help you here</p>
+                <h1 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Your question has been sent to us!</h1>
+                <p class="text-2xl text-[#000000] rounded-md">We will help you as soon as we can!</p>
+                <p class="text-2xl text-[#000000] rounded-md mt-6" id="countdown">You will be redirected back in 5 seconds</p>
             </div>
-            <form class="space-y-8" action="https://formsubmit.co/1cfed995fba4de5f0769fba8673c9cec" method="POST">
-
-                <!-- Honeypot -->
-                <input type="text" name="_honey" style="display: none;">
-
-                <!-- Disable Captcha -->
-                <input type="hidden" name="_captcha" value="false">
-
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/jaar%202/projecten/DutchDestinations/succes.html">
-
-                <div>
-                    <label for="name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">Your Name</label>
-                    <input type="name" id="name" name="Name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="John Doe" required>
-                </div>
-                <div>
-                    <label for="email" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                    <input type="email" id="email" name="Email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="example@mail.com" required>
-                </div>
-                <div>
-                    <label for="subject" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                    <input type="text" id="subject" name="Subject" class="block p-3 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
-                </div>
-                <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                    <textarea id="message" rows="6" name="Message " class="block p-2.5 w-full text-base text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-                </div>
-                <button id="btn" type="submit" value="Send" class="button-55" role="button">Submit</button>
-            </form>
         </div>
     </section>
 
+    <!-- Timer countdown -->
+    <script>
+        var timeleft = 5;
+        var downloadtimer = setInterval(function(){
+            if(timeleft <= 0){
+                clearInterval(downloadtimer);
+                document.getElementById("countdown").innerHTML = "bye :)";
+            } else {
+                document.getElementById("countdown").innerHTML = "You will be redirected back in " + timeleft + " seconds"
+            }
+            timeleft -= 1;
+        }, 1000);
+    </script>
+
     <!-- Footer -->
-    <footer class="h-16 mt-10">
+    <footer class="h-16  absolute bottom-0">
         <hr class="w-full">
         <div class="flex">
             <a href="#" class="flex items-center mr-80">
@@ -103,4 +91,3 @@
     </footer>
 </body>
 </html>
-<!-- wachtvoord SMTP: 29D05BD7547F0158C5CEC9692E62195FB3F5 -->
