@@ -7,15 +7,3 @@ Je kan hier bepaalde bezichtegingen selecteren zodat er een route voor je gemaak
 Er zijn opties om alleen op pad te gaan naar de mooie plekken, maar je kan ook een online gids gebruiken die je kan vertellen waar je heen moet en eventueel naar kan kijken onderweg voor mooie gebouwen of gebeurtenissen die daar gebeurd zijn. (Net zoals een echte tour gids in zo een bus of iemand die de hele dag met je mee loopt.)
 
 Dit wordt eventueel een app waarmee je grote steden kan ontdekken door middel van alleen je telefoon te gebruiken.
-
-Naam ideeën:
-CanalCityGuides
-WalkTheDam
-DutchDestinations
-Amsterdam Explore
-Canal Companion
-
-Misschien een hoofd merk voor alle steden in de hele wereld:
-City Seeker
-Urban Adventurer
-City Navigator
