@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>DutchDestinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="w-full">
+
+    <!-- Navbar -->
+    <nav class="relative px-4 py-0 flex justify-between items-center bg-white">
+        <a class="text-3xl font-bold" href="#">
+            <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="hidden absolute top-1/2 right-5 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="index.html">Home</a></li>
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="about.html">About</a></li>
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="prices.html">Pricing</a></li>
+            <li><a class=" text-blue-600 font-bold" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden transition-transform duration-500 ease-in-out">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-4 px-4 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-10 w-10 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="index.html">Home</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="about.html">About Us</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="prices.html">Pricing</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-bold text-blue-600 hover:bg-blue-50 hover:text-blue-600 rounded" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+     <!-- contact form -->
+     <section class="dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-7 mx-auto max-w-screen-md md:p-20">
+            <div class="flex relative flex-col items-center justify-center mb-10">
+                <h1 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Contact Us</h1>
+                <p class="text-2xl text-[#000000] text-center rounded-md">Need help of do you have questions? We can help you here Feedback is always welcome</p>
+            </div>
+            <form class="space-y-8" action="https://formsubmit.co/1cfed995fba4de5f0769fba8673c9cec" method="POST">
+
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Reply -->
+                <input type="hidden" name="_autoresponse" value="We've received your message and will reply as soon as possible!">
+
+                <!-- Subject -->
+                <input type="hidden" name="_subject" value="Contact/Feedback">
+
+                <!-- Template -->
+                <input type="hidden" name="_template" value="box">
+
+                <input type="hidden" name="_next" value="/succes.html">
+
+                <div>
+                    <label for="name" class="block mb-2 text-xl font-semibold text-gray-900 dark:text-gray-300">Your Name</label>
+                    <input type="name" id="name" name="Name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="John Doe" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-xl font-semibold text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" name="Email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-base rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="example@mail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-xl font-semibold text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" name="Subject" class="block p-3 w-full text-base text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-xl font-semibold text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" name="Message " class="block p-2.5 w-full text-base text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <div class="flex flex-row justify-center items-center">
+                    <a href="./succes.html"><button id="btn" type="submit" value="Send" class="button-55" role="button">Submit</button></a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="h-16 mt-8 lg:mt-12">
+        <hr>
+        <div class="flex items-center justify-center md:justify-around lg:justify-between">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class="h-16 md:h-28 lg:h-24 lg:pl-6 mr-3 my-0 py-0" alt="DutchDestinations" />
+            </a>
+            <p class="text-xl pt-5 md:pr-10 lg:pr-40">©DutchDestinations 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

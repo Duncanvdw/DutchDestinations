@@ -1,0 +1,285 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.geeks {
+    padding: 200px;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+    min-height: 300px;
+}
+
+.pattern {
+    position: relative;
+    background-color: #b300ff12;
+
+}
+
+.pattern:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: url(
+https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+.patroon {
+    position: relative;
+    background-color: #b300ff12;
+
+}
+
+.patroon {
+    transform: scaleX(-1) scaleY(-1);
+}
+
+.patroon::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: url(
+    https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .button-55{
+        font-size: 20px !important;
+        line-height: 26px;
+        height: 60px;
+        width: 140px;
+    }
+}
+
+.button-55 {
+  align-self: center;
+  background-color: #FFF;
+  font-weight: bold;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #000;
+  border-color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 24px;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -65px;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-style: solid;
+    border-bottom: #888;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+
+#hr-een {
+    height: 2px;
+    background-color: #828282;
+}
+
+#hr-twee {
+    height: 3px;
+    background-color: #828282;
+}
+
+
+@media (min-width: 1024px) {
+    #alinea2{
+        background-color: #b300ff12;
+    }
+}
+
+@media (min-width: 1024px) {
+    #color-bg-header-text {
+        background-color: #4b5563dd;
+    }
+}
+
+@media (min-width: 1150px) {
+    #alinea-1-homepage{
+        margin-top: 300px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #alinea-1-homepage{
+        margin-top: 450px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #map-large{
+        height: 550px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #alinea-1-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 400px;
+        right: 64px;
+        background-color: white;
+    }
+
+    #alinea-2-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 1430px;
+        left: 64px;
+        background-color: white;
+    }
+
+    #alinea-3-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 2400px;
+        right: 64px;
+        background-color: white;
+    }
+
+    #background-alinea-2-prices{
+        background-color: #b300ff12;
+    }
+}
+
+@media (min-width: 1280px) {
+    #alinea-1-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 480px;
+        right: 64px;
+        background-color: white;
+    }
+
+    #alinea-2-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 1670px;
+        left: 64px;
+        background-color: white;
+    }
+
+    #alinea-3-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 2770px;
+        right: 64px;
+        background-color: white;
+    }
+}
+
+@media (min-width: 1400px) {
+    #alinea-1-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 560px;
+        right: 64px;
+        background-color: white;
+    }
+
+    #alinea-2-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 1880px;
+        left: 64px;
+        background-color: white;
+    }
+
+    #alinea-3-prices {
+        border: solid black 1px;
+        border-radius: 8px;
+        padding: 20px;
+        position: absolute;
+        top: 3130px;
+        right: 64px;
+        background-color: white;
+    }
+}

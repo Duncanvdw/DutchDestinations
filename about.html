@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>DutchDestinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="w-full">
+
+    <!-- Navbar -->
+    <nav class="relative px-4 py-0 flex justify-between items-center  bg-white">
+        <a class="text-3xl font-bold" href="#">
+            <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="hidden absolute top-1/2 right-5 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="index.html">Home</a></li>
+            <li><a class=" text-blue-600 font-bold" href="about.html">About</a></li>
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="prices.html">Pricing</a></li>
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden transition-transform duration-500 ease-in-out">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-4 px-4 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-10 w-10 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="index.html">Home</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-bold text-blue-600 hover:bg-blue-50 hover:text-blue-600 rounded" href="about.html">About Us</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="prices.html">Pricing</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Alinea 1 -->
+    <section class="mt-6 mb-14 lg:mt-12 p-7 md:p-16 lg:pb-0 lg:mb-0">
+        <div class="lg:flex lg:items-center">
+            <div class="mt-6 lg:pr-12 xl:w-1/2">
+                <h1 class="text-[#00385c] text-2xl md:text-3xl lg:text-4xl font-extrabold text-center lg:text-left pb-2 lg:pb-6">What Is DutchDestinations?</h1>
+                <p class="text-xl md:text-2xl w-full text-[#000000] rounded-md mt-2 mb-10">Welcome to DutchDestinations, your ticket to a personalized Amsterdam adventure! We are passionate about unlocking the magic of this historic city for every explorer, and we believe that the best way to experience Amsterdam is at your own pace.</p>
+            </div>
+            <img class="rounded-md w-full lg:w-5/12 lg:h-72 lg:mt-5 xl:h-96" src="./images/Dam" alt="">
+        </div>
+    </section>
+
+    <!-- Alinea 2 -->
+    <section class="mt-6 lg:mt-12 p-7 md:px-16">
+        <div class="flex flex-col-reverse lg:flex-row lg:items-center">
+            <img class="rounded-md w-full lg:w-5/12 lg:h-72 lg:mt-8 xl:h-96" src="./images/Dam" alt="">
+            <div class="mt-6 lg:pl-12 xl:w-1/2">
+                <h2 class="text-[#00385c] text-2xl md:text-3xl lg:text-4xl font-extrabold text-center lg:text-left mt-2 mb-4">Who Are We?</h2>
+                <p class="text-xl md:text-2xl w-full mb-10 text-[#000000] rounded-md">We are a team of travel enthusiasts and Amsterdam locals dedicated to transforming your visit into an unforgettable journey. We understand that every traveler is unique, and we've crafted an online self-guided tour that puts you in the driver's seat of your Amsterdam exploration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alinea 3 -->
+    <section class="mt-14 mb-14 lg:mt-12 p-7 md:p-16 lg:my-0 lg:py-0">
+        <div class="flex flex-col lg:flex-row lg:items-center">
+            <div class="mt-6 lg:pr-12 xl:w-1/2">
+                <h2 class="text-[#00385c] text-2xl md:text-3xl lg:text-4xl font-extrabold text-center lg:text-left pb-2 lg:pb-6">Our Mission</h2>
+                <p class="text-xl md:text-2xl w-full text-[#000000] rounded-md mt-2 mb-10">Our mission is simple: to provide you with the tools and information to explore Amsterdam authentically. We want to break free from the confines of traditional guided tours and empower you to create your own adventure. Amsterdam is a city with stories waiting to be discovered, and we're here to help you uncover them on your terms.</p>
+            </div>
+            <img class="rounded-md w-full lg:w-5/12 lg:h-80 lg:mt-5 xl:h-96" src="./images/Dam" alt="">
+        </div>
+    </section>
+
+    <!-- Alinea 4 -->
+    <section class="mt-14 lg:mt-12 p-7 md:pb-16 lg:flex lg:justify-center">
+            <div class="mt-6 lg:pl-12 xl:w-2/3">
+                <h2 class="text-[#00385c] text-2xl md:text-3xl lg:text-4xl text-center font-extrabold pb-2 lg:pb-6">Why Choose DutchDestinations</h2>
+                <p class="md:text-2xl"><strong>Flexibility:</strong> No more rigid schedules or rushing to keep up. Our self-guided tour allows you to start, pause, and continue your journey whenever and wherever you like.</p>
+                <p class="md:text-2xl"><strong>Personalization:</strong> Tailor your experience to match your interests. Choose the attractions that resonate with you, and let our app guide you through a curated itinerary of your own making.</p>
+                <p class="md:text-2xl"><strong> Technology:</strong> Our cutting-edge app combines smart routing with interactive maps and real-time navigation, ensuring a seamless and efficient exploration of Amsterdam.</p>
+                <p class="md:text-2xl"><storng>Local Insights:</strong> We're not just a tour guide; we're your local companion. Discover hidden gems, off-the-beaten-path treasures, and the pulse of Amsterdam from a unique perspective.</p>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="h-16 mt-8 lg:mt-12">
+        <hr>
+        <div class="flex items-center justify-center md:justify-around lg:justify-between">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class="h-16 md:h-28 lg:h-24 lg:pl-6 mr-3 my-0 py-0" alt="DutchDestinations" />
+            </a>
+            <p class="text-xl pt-5 md:pr-10 lg:pr-40">©DutchDestinations 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

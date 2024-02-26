@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "refresh" content = "7; url = ./contact.html"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DutchDestinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="w-full h-16 bg-white">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pr-4">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-base text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                    <li class="">
+                        <a href="index.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="prices.html"><button>Prices</button></a>
+                            <div class="dropdown-content">
+                                <a href="explore-lite.html">Explore Lite</a>
+                                <hr id="hr-een">
+                                <a href="discover-plus.html">Discover Plus</a>
+                                <hr id="hr-twee">
+                                <a href="deluxe-adventure.html">Deluxe Advernture</a>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <a href="contact.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="w-full">
+        </nav>
+
+    <!-- contact form -->
+    <section class="dark:bg-gray-900 mt-32">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <div class="flex relative flex-col items-center justify-center mb-10">
+                <h1 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Your question has been sent to us!</h1>
+                <p class="text-2xl text-[#000000] rounded-md">We will help you as soon as we can!</p>
+                <p class="text-2xl text-[#000000] rounded-md mt-6" id="countdown">You will be redirected back in 5 seconds</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timer countdown -->
+    <script>
+        var timeleft = 5;
+        var downloadtimer = setInterval(function(){
+            if(timeleft <= 0){
+                clearInterval(downloadtimer);
+                document.getElementById("countdown").innerHTML = "bye :P";
+            } else {
+                document.getElementById("countdown").innerHTML = "You will be redirected back in " + timeleft + " seconds"
+            }
+            timeleft -= 1;
+        }, 1000);
+    </script>
+
+    <!-- Footer -->
+    <footer class="h-16  absolute bottom-0 w-full">
+        <hr class="w-full">
+        <div class="flex">
+            <a href="#" class="flex items-center mr-80">
+                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
+            </a>
+            <p class="flex justify-center text-xl ml-40 pt-5">©DutchDestinations 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

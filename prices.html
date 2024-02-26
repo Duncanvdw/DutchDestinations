@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>DutchDestinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="w-full">
+
+    <!-- Navbar -->
+    <nav class="relative px-4 py-0 flex justify-between items-center bg-white">
+        <a class="text-3xl font-bold" href="#">
+            <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="hidden absolute top-1/2 right-5 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="index.html">Home</a></li>
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="about.html">About</a></li>
+            <li><a class=" text-blue-600 font-bold" href="prices.html">Pricing</a></li>
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden transition-transform duration-500 ease-in-out">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-4 px-4 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-10 w-10 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="index.html">Home</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="about.html">About Us</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-bold text-blue-600 hover:bg-blue-50 hover:text-blue-600 rounded" href="prices.html">Pricing</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Alinea 1 -->
+    <section class="mt-6 lg:mt-0 p-7 md:p-16 lg:pt-6 lg:mb-80">
+        <div class="mt-6">
+            <div class="flex flex-col-reverse lg:flex-col items-center lg:items-start">
+                <img class="rounded-md w-full lg:w-1/2 mb-6 lg:mb-0" src="./images/Dam" alt="">
+                <div class="w-full mb-10 lg:w-2/3 lg:ml-4" id="alinea-1-prices">
+                    <h1 class="font-extrabold text-[#00385c] text-2xl md:text-3xl lg:text-4xl pb-2 lg:pb-6">Explore Lite - Affordable Exploration</h1>
+                    <div class="ml-[3%] text-xl">
+                            <p class="md:text-2xl"><strong>Self-Guided Tour:</strong> Enjoy the flexibility of a self-guided Amsterdam tour, exploring the city at your own pace.</p>
+                            <p class="md:text-2xl"><strong>Live Navigation:</strong> Receive turn-by-turn directions in real-time, ensuring a seamless and stress-free exploration.</p>
+                            <p class="md:text-2xl"><strong>Customized Routes:</strong> Enjoy freedom of customizing your route based on your unique preferences and interests.</p>
+                            <p class="md:text-2xl"><strong>Offline Access:</strong> Download your tour content in advance for offline exploration, perfect for those on a tight budget.</p>
+                    </div>
+                    <a href="explore-lite.html"><button class="button-55" role="button">Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg viewBox="0 0 1440 320" class="hidden lg:block"><path fill="#b300ff12" fill-opacity="1" d="M0,160L34.3,181.3C68.6,203,137,245,206,245.3C274.3,245,343,203,411,192C480,181,549,203,617,224C685.7,245,754,267,823,245.3C891.4,224,960,160,1029,122.7C1097.1,85,1166,75,1234,90.7C1302.9,107,1371,149,1406,170.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+
+    <!-- Alinea 2 -->
+    <section class="mt-6 lg:mt-0 lg:pb-96 p-7 md:px-16 lg:py-20" id="background-alinea-2-prices">
+        <div class="mt-6">
+            <div class="flex flex-col-reverse lg:flex-col items-end">
+                <img class="rounded-md w-full lg:w-1/2 mb-6 lg:mb-0" src="./images/Dam" alt="">
+                <div class="w-full mb-10 lg:w-3/4 lg:ml-4" id="alinea-2-prices">
+                    <h2 class="font-extrabold text-[#00385c] text-2xl md:text-3xl lg:text-4xl pb-2 lg:pb-6">Discover Plus - Enhanced Experience</h2>
+                    <div class="text-xl">
+                        <p class="md:text-2xl"><strong>Everything in Explore Lite, plus:</strong></p>
+                        <p class="md:text-2xl"><strong>Personalized Itineraries:</strong> Enjoy the flexibility of a self-guided Amsterdam tour, exploring the city at your own pace.</p>
+                        <p class="md:text-2xl"><strong>Audio Narration:</strong> Our cutting-edge app combines smart routing with interactive maps and real-time navigation, ensuring a seamless and efficient exploration of Amsterdam.</p>
+                        <p class="md:text-2xl"><strong>Suggestions for Hidden Gems:</strong> We're not just a tour guide; we're your local companion. Discover hidden gems, off-the-beaten-path treasures, and the pulse of Amsterdam from a unique perspective.</p>
+                    </div>
+                    <a href="discover-plus.html"><button class="button-55" role="button">Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg viewBox="0 0 1440 320" class="hidden lg:block"><path fill="#b300ff12" fill-opacity="1" d="M0,160L34.3,181.3C68.6,203,137,245,206,245.3C274.3,245,343,203,411,192C480,181,549,203,617,224C685.7,245,754,267,823,245.3C891.4,224,960,160,1029,122.7C1097.1,85,1166,75,1234,90.7C1302.9,107,1371,149,1406,170.7L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+    <!-- Alinea 3 -->
+    <section class="mt-6 p-7 md:p-16 lg:pt-0 lg:mt-0 lg:mb-80">
+        <div class="mt-6">
+            <div class="flex flex-col-reverse lg:flex-col">
+                <img class="rounded-md w-full lg:w-1/2 mb-6 lg:mb-0" src="./images/Dam" alt="">
+                <div class="w-full mb-10 lg:w-3/4 lg:ml-4" id="alinea-3-prices">
+                    <h2 class="font-extrabold text-[#00385c] text-2xl md:text-3xl lg:text-4xl pb-2 lg:pb-6">Deluxe Adventure - Unmatched Luxury</h2>
+                    <div class="ml-[3%] text-xl">
+                        <p class="md:text-2xl"><strong>Everything in Discover Plus, plus:</strong></p>
+                        <p class="md:text-2xl"><strong>Priority Access:</strong> Skip the lines with priority access to popular attractions, saving you valuable time.</p>
+                        <p class="md:text-2xl"><strong>Premium Audio Guides:</strong> Delve deeper into the stories behind each landmark with premium audio guides, narrated by local experts.</p>
+                        <p class="md:text-2xl"><strong>24/7 Customer Support:</strong> Receive round-the-clock customer support for any assistance or recommendations during your journey.</p>
+                    </div>
+                    <a href="deluxe-adventure.html"><button class="button-55" role="button">Learn More</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="h-16 mt-8 lg:mt-12">
+        <hr>
+        <div class="flex items-center justify-center md:justify-around lg:justify-between">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class="h-16 md:h-28 lg:h-24 lg:pl-6 mr-3 my-0 py-0" alt="DutchDestinations" />
+            </a>
+            <p class="text-xl pt-5 md:pr-10 lg:pr-40">©DutchDestinations 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
