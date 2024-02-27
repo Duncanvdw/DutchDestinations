@@ -28,14 +28,25 @@
         </div>
         <ul class="hidden absolute top-1/2 right-5 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
             <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="index.html">Home</a></li>
-            <li><a class=" text-blue-600 font-bold" href="about.html">About</a></li>
-            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="prices.html">Pricing</a></li>
+            <li><a class="text-blue-600 font-bold" href="about.html">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="prices.html"><button class="text-gray-400 font-bold hover:text-blue-500">Prices</button></a>
+                    <div class="dropdown-content">
+                        <a href="explore-lite.html" class="text-gray-400 font-bold hover:text-blue-500">Explore Lite</a>
+                        <hr id="hr-een">
+                        <a href="discover-plus.html" class="text-gray-400 font-bold hover:text-blue-500">Discover Plus</a>
+                        <hr id="hr-twee">
+                        <a href="deluxe-adventure.html" class="text-gray-400 font-bold hover:text-blue-500">Deluxe Advernture</a>
+                    </div>
+                </div>
+            </li>
             <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <div class="navbar-menu relative z-50 hidden transition-transform duration-500 ease-in-out">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-4 px-4 bg-white border-r overflow-y-auto">
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm pb-4 px-4 bg-white border-r overflow-y-auto">
             <div class="flex items-center mb-8">
                 <a class="mr-auto text-3xl font-bold leading-none" href="#">
                     <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
@@ -54,9 +65,17 @@
                     <li class="mb-1">
                         <a class="block p-4 text-2xl md:text-4xl font-bold text-blue-600 hover:bg-blue-50 hover:text-blue-600 rounded" href="about.html">About Us</a>
                     </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="prices.html">Pricing</a>
-                    </li>
+                    <li>
+                        <div class="flex flex-row items-center">
+                            <a href="prices.html"><button class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Prices</button></a>
+                            <img id="arrow-icon" src="/images/right-arrow.png" alt="right arrow" class="h-4 cursor-pointer transform transition-transform">
+                        </div>
+                        <div class="ml-4 dropdown-menu hidden">
+                            <a href="explore-lite.html" class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Explore Lite</a>
+                            <a href="discover-plus.html" class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Discover Plus</a>
+                            <a href="deluxe-adventure.html" class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Deluxe Adventure</a>
+                        </div>
+                    </li>                                  
                     <li class="mb-1">
                         <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="contact.html">Contact</a>
                     </li>

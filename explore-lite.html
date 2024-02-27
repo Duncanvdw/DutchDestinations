@@ -7,51 +7,82 @@
     <title>DutchDestinations</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="w-full h-16 bg-white">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pr-4">
-            <a href="#" class="flex items-center">
-                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
-            </a>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+    <nav class="relative px-4 py-0 flex justify-between items-center  bg-white">
+        <a class="text-3xl font-bold" href="#">
+            <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-blue-600 p-3">
+                <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                 </svg>
             </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
-                    <li class="">
-                        <a href="index.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+        </div>
+        <ul class="hidden absolute top-1/2 right-5 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class=" text-gray-400 font-bold hover:text-blue-500" href="index.html">Home</a></li>
+            <li><a class="text-gray-400 font-bold hover:text-blue-500" href="about.html">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <a href="prices.html"><button class="text-blue-600 font-bold">Prices</button></a>
+                    <div class="dropdown-content">
+                        <a href="explore-lite.html" class="text-blue-600 font-bold">Explore Lite</a>
+                        <hr id="hr-een">
+                        <a href="discover-plus.html" class="text-gray-400 font-bold hover:text-blue-500">Discover Plus</a>
+                        <hr id="hr-twee">
+                        <a href="deluxe-adventure.html" class="text-gray-400 font-bold hover:text-blue-500">Deluxe Advernture</a>
+                    </div>
+                </div>
+            </li>
+            <li><a class="text-gray-400 font-bold hover:text-blue-500" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden transition-transform duration-500 ease-in-out">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm pb-4 px-4 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <img src="./images/logo.png" class="h-24 mr-3 lg:ml-40 my-0 py-0" alt="DutchDestinations" />
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-10 w-10 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="index.html">Home</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="about.html">About Us</a>
                     </li>
                     <li>
-                        <a href="about.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <a href="prices.html"><button>Prices</button></a>
-                            <div class="dropdown-content">
-                                <a href="explore-lite.html" class="text-blue-500">Explore Lite</a>
-                                <hr id="hr-een">
-                                <a href="discover-plus.html">Discover Plus</a>
-                                <hr id="hr-twee">
-                                <a href="deluxe-adventure.html">Deluxe Advernture</a>
-                            </div>
+                        <div class="flex flex-row items-center">
+                            <a href="prices.html"><button class="block p-4 text-2xl md:text-4xl font-bold text-blue-600 hover:bg-blue-50 hover:text-blue-600 rounded">Prices</button></a>
+                            <img id="arrow-icon" src="/images/right-arrow.png" alt="right arrow" class="h-4 cursor-pointer transform transition-transform">
                         </div>
-                    </li>
-                     <li>
-                        <a href="contact.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        <div class="ml-4 dropdown-menu hidden">
+                            <a href="explore-lite.html" class="block p-4 text-2xl md:text-4xl font-bold text-blue-600 hover:bg-blue-50 hover:text-blue-600 rounded">Explore Lite</a>
+                            <a href="discover-plus.html" class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Discover Plus</a>
+                            <a href="deluxe-adventure.html" class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Deluxe Adventure</a>
+                        </div>
+                    </li>                                  
+                    <li class="mb-1">
+                        <a class="block p-4 text-2xl md:text-4xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <hr class="w-full">
-    </nav>
+        </nav>
+    </div>
 
     <!-- Alinea 1 -->
     <section class="mt-28">
@@ -65,7 +96,7 @@
             </div>
         </div> 
     </section>
-
+<li><a class=" text-gray-400 font-bold hover:text-blue-500" href="prices.html">Pricing</a></li>
     <!-- Alinea 2 -->
     <section class="mt-28">
         <div class="mt-10">

@@ -38,3 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+//arrow icon hamburger menu mobile
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('arrow-icon').addEventListener('click', function () {
+        var dropdownMenu = document.querySelector('.dropdown-menu');
+        dropdownMenu.classList.toggle('hidden');
+
+        var arrowIcon = document.getElementById('arrow-icon');
+        arrowIcon.classList.toggle('rotate-90');
+    });
+});

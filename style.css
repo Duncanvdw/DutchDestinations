@@ -123,7 +123,7 @@ https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
   
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: absolute   ;
     left: -65px;
     background-color: #f1f1f1;
     min-width: 200px;
