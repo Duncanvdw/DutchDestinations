@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DutchDestinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="w-full h-16 bg-white">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pr-4">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                    <li class="">
+                        <a href="index.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="prices.html"><button>Prices</button></a>
+                            <div class="dropdown-content">
+                                <a href="explore-lite.html">Explore Lite</a>
+                                <hr id="hr-een">
+                                <a href="discover-plus.html">Discover Plus</a>
+                                <hr id="hr-twee">
+                                <a href="deluxe-adventure.html" class="text-blue-500">Deluxe Advernture</a>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <a href="contact.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="w-full">
+    </nav>
+
+    <!-- Alinea 1 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <div class="ml-[10%]">
+                    <h1 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Deluxe Adventure</h1>
+                    <p class="text-2xl w-[90%] bottom-2  text-[#000000] rounded-md">Step into the pinnacle of self-guided exploration with Deluxe Adventure, our top-tier option that transcends boundaries and sets a new standard for your Amsterdam journey. This page is your gateway to an unparalleled adventure where every feature, from priority access to premium audio guides and 24/7 customer support, is meticulously designed to offer the epitome of luxury and customization. Elevate your Amsterdam experience to new heights with Deluxe Adventure – where exploration becomes a lavish and unforgettable affair. Embark on the journey of a lifetime!</p>
+                </div>
+                <img class="rounded-md mr-[10%] w-[500px]" src="./images/Dam" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 2 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <img class="rounded-md ml-[10%] w-[500px]" src="./images/Dam" alt="">
+                <div class="mr-[10%] ml-[5%]">
+                    <h2 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Everything in Discover Plus, Plus: Elevate Your Amsterdam Adventure</h2>
+                    <p class="text-2xl w-[90%]  text-[#000000] rounded-md">Welcome to the pinnacle of our self-guided tours – Everything in Discover Plus, Plus. This elevated experience transcends the ordinary, offering a host of exclusive features that redefine how you explore Amsterdam.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 3 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <div class="ml-[10%]">
+                    <h2 class="flex font-extrabold pt-8 pb-6 text-[#00385c] text-4xl">Premium Audio Guides</h2>
+                    <p class="text-2xl w-[90%] mb-8 bottom-2  text-[#000000] rounded-md">Delve deeper into the heart and soul of Amsterdam with our Premium Audio Guides. Narrated by local experts, these guides transform your journey into a symphony of stories. Each landmark comes to life with rich narratives, historical anecdotes, and cultural insights, providing a level of depth that goes beyond the surface. This is not just a tour; it's an immersive experience that enriches your connection to Amsterdam's heritage.</p>
+                </div>
+                <img class="rounded-md mr-[10%] w-[500px]" src="./images/Dam" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 4 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <img class="rounded-md ml-[10%] w-[500px]" src="./images/Dam" alt="">
+                <div class="mr-[10%] ml-[5%]">
+                    <h2 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">24/7 Customer Support</h2>
+                    <p class="text-2xl w-[90%] bottom-2  text-[#000000] rounded-md">In the world of Everything in Discover Plus, Plus, your journey is accompanied by the reassurance of 24/7 Customer Support. Whether you seek assistance, recommendations, or just a friendly voice during your exploration, our support team is here for you around the clock. Experience peace of mind, knowing that expert guidance is just a call or message away, ensuring a seamless and worry-free adventure through Amsterdam.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Buy button -->
+    <div class="flex justify-center mt-10">
+        <a href="#"><button class="button-55" role="button">Buy It Now</button></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="h-16 mt-10">
+        <hr class="w-full">
+        <div class="flex">
+            <a href="#" class="flex items-center mr-80">
+                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
+            </a>
+            <p class="flex justify-center text-xl ml-40 pt-5">©DutchDestinations 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

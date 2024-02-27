@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DutchDestinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="w-full h-16 bg-white">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pr-4">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                    <li class="">
+                        <a href="index.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="prices.html"><button>Prices</button></a>
+                            <div class="dropdown-content">
+                                <a href="explore-lite.html" class="text-blue-500">Explore Lite</a>
+                                <hr id="hr-een">
+                                <a href="discover-plus.html">Discover Plus</a>
+                                <hr id="hr-twee">
+                                <a href="deluxe-adventure.html">Deluxe Advernture</a>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <a href="contact.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="w-full">
+    </nav>
+
+    <!-- Alinea 1 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <div class="ml-[10%]">
+                    <h1 class="flex font-extrabold pt-12 pb-6 text-[#00385c] text-4xl">Explore Lite</h1>
+                    <p class="text-2xl w-[90%] mb-8 bottom-2  text-[#000000] rounded-md">Step into the world of Explore Lite, our budget-friendly option designed for savvy explorers seeking an affordable taste of Amsterdam's wonders. This page is your portal to an enriching self-guided tour that allows you to discover the city at your own pace without breaking the bank. Explore Lite offers a wallet-friendly way to navigate the iconic streets, delve into the rich history, and uncover hidden gems, all while enjoying the flexibility to tailor your journey to your liking. Amsterdam exploration meets affordability – start your adventure with Explore Lite today!</p>
+                </div>
+                <img class="rounded-md mr-[10%] w-[500px]" src="./images/Dam" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 2 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <img class="rounded-md ml-[10%] w-[500px]" src="./images/Dam" alt="">
+                <div class="mr-[10%] ml-[5%]">
+                    <h2 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Self-Guided Tour</h2>
+                    <p class="text-2xl w-[90%]  text-[#000000] rounded-md">Discover Amsterdam on your terms with our self-guided tour, an experience tailored for the modern explorer. Say goodbye to the constraints of traditional guided tours and hello to the freedom of setting your own pace. Whether you're an early riser or a night owl, our self-guided tour adapts to your schedule, allowing you to immerse yourself in the city's beauty, history, and culture on your own timeline. This is exploration on your terms, where every alley and canal is an invitation to wander, wonder, and create your own Amsterdam story.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 3 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <div class="ml-[10%]">
+                    <h2 class="flex font-extrabold pt-8 pb-6 text-[#00385c] text-4xl">Live Navigation</h2>
+                    <p class="text-2xl w-[90%] mb-8 bottom-2  text-[#000000] rounded-md">Embark on a journey without the stress of maps and directions. Our Live Navigation feature ensures a seamless and stress-free exploration of Amsterdam's captivating streets. Receive turn-by-turn directions in real-time, guiding you effortlessly from one landmark to the next. Whether you're navigating the historic city center or strolling along the scenic canals, our live navigation is your reliable companion. It's like having a local guide in your pocket, enhancing your experience and allowing you to focus on the sights, sounds, and sensations of Amsterdam.</p>
+                </div>
+                <img class="rounded-md mr-[10%] w-[500px]" src="./images/Dam" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 4 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <img class="rounded-md ml-[10%] w-[500px]" src="./images/Dam" alt="">
+                <div class="mr-[10%] ml-[5%]">
+                    <h2 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Customized Routes</h2>
+                    <p class="text-2xl w-[90%] bottom-2  text-[#000000] rounded-md">In Amsterdam, every traveler's story is unique, and with our Customized Routes feature, you become the storyteller. Enjoy the freedom of crafting a route based on your unique preferences and interests. Whether you're an art enthusiast, history buff, or simply seeking the city's hidden gems, you have the power to tailor your journey. Create an itinerary that speaks to your passions, ensuring that every step in Amsterdam is a step towards your personalized adventure. This is exploration at its most authentic – where the path is yours to choose.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 5 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <div class="ml-[10%]">
+                    <h2 class="flex font-extrabold pt-12 pb-6 text-[#00385c] text-4xl">Offline Access</h2>
+                    <p class="text-2xl w-[90%] mb-8 bottom-2  text-[#000000] rounded-md">For those on a tight budget or simply seeking a digital detox, our Offline Access feature is your ticket to an immersive yet affordable exploration of Amsterdam. Download your tour content in advance, and step into the city without the need for constant data or internet connection. Wander through charming streets, admire historic architecture, and savor local flavors without worrying about connectivity. It's the perfect option for budget-conscious travelers who want to experience Amsterdam's magic without breaking the bank.</p>
+                </div>
+                <img class="rounded-md mr-[10%] w-[500px]" src="./images/Dam" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <!-- Buy button -->
+    <div class="flex justify-center">
+        <a href="#"><button class="button-55" role="button">Buy It Now</button></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="h-16 mt-10">
+        <hr class="w-full">
+        <div class="flex">
+            <a href="#" class="flex items-center mr-80">
+                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
+            </a>
+            <p class="flex justify-center text-xl ml-40 pt-5">©DutchDestinations 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

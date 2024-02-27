@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DutchDestinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="w-full h-16 bg-white">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pr-4">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                    <li class="">
+                        <a href="index.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="prices.html"><button>Prices</button></a>
+                            <div class="dropdown-content">
+                                <a href="explore-lite.html">Explore Lite</a>
+                                <hr id="hr-een">
+                                <a href="discover-plus.html" class="text-blue-500">Discover Plus</a>
+                                <hr id="hr-twee">
+                                <a href="deluxe-adventure.html">Deluxe Advernture</a>
+                            </div>
+                        </div>
+                    </li>
+                     <li>
+                        <a href="contact.html" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="w-full">
+    </nav>
+
+    <!-- Alinea 1 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <div class="ml-[10%]">
+                    <h1 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Discover Plus</h1>
+                    <p class="text-2xl w-[90%] bottom-2  text-[#000000] rounded-md">Step into the realm of Discover Plus, our middle-tier option that bridges affordability and enhanced features for a more enriching Amsterdam exploration. This page serves as your entryway to a curated adventure, offering everything from personalized itineraries to immersive audio narration and insider suggestions for hidden gems. Discover Plus is the perfect balance for those seeking a comprehensive and flexible self-guided tour, blending convenience with a deeper dive into the heart of Amsterdam. Your journey is about to reach new heights – embark on the Discover Plus experience today!</p>
+                </div>
+                <img class="rounded-md mr-[10%] w-[500px]" src="./images/Dam" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 2 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <img class="rounded-md ml-[10%] w-[500px]" src="./images/Dam" alt="">
+                <div class="mr-[10%] ml-[5%]">
+                    <h2 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Everything in Explore Lite, Plus: Enhanced Features for a Deeper Dive into Amsterdam</h2>
+                    <p class="text-2xl w-[90%]  text-[#000000] rounded-md">Unveil the next level of exploration with our upgraded package – Everything in Explore Lite, Plus. This enhanced experience offers an array of features that turn your self-guided Amsterdam tour into a personalized and enriched journey.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 3 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <div class="ml-[10%]">
+                    <h2 class="flex font-extrabold pt-8 pb-6 text-[#00385c] text-4xl">Audio Narration</h2>
+                    <p class="text-2xl w-[90%] mb-8 bottom-2  text-[#000000] rounded-md">Experience the city's history and culture in a whole new way with our Audio Narration feature. Our cutting-edge app weaves smart routing with interactive maps, all while providing real-time navigation. Immerse yourself in Amsterdam's rich tapestry as you explore each landmark, museum, and hidden corner. The stories come alive through expertly narrated insights, adding depth and context to your journey. This is more than navigation; it's a narrative that enhances your connection to the heart of Amsterdam.</p>
+                </div>
+                <img class="rounded-md mr-[10%] w-[500px]" src="./images/Dam" alt="">
+            </div>
+        </div> 
+    </section>
+
+    <!-- Alinea 4 -->
+    <section class="mt-28">
+        <div class="mt-10">
+            <div class="flex relative items-center">
+                <img class="rounded-md ml-[10%] w-[500px]" src="./images/Dam" alt="">
+                <div class="mr-[10%] ml-[5%]">
+                    <h2 class="flex font-extrabold pb-6 text-[#00385c] text-4xl">Suggestions for Hidden Gems</h2>
+                    <p class="text-2xl w-[90%] bottom-2  text-[#000000] rounded-md">In Amsterdam, we're not just your tour guide; we're your local companion, revealing the city's heartbeat from a unique perspective. With Suggestions for Hidden Gems, we guide you beyond the tourist hotspots to discover off-the-beaten-path treasures. Venture into charming alleyways, stumble upon cozy cafes, and witness the city's pulse through the eyes of a local. This isn't just exploration; it's an invitation to be part of the fabric of Amsterdam, discovering the city's soul one hidden gem at a time.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- Buy button -->
+    <div class="flex justify-center mt-10">
+        <a href="#"><button class="button-55" role="button">Buy It Now</button></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="h-16 mt-10">
+        <hr class="w-full">
+        <div class="flex">
+            <a href="#" class="flex items-center mr-80">
+                <img src="./images/logo.png" class="h-16 mr-3 my-0 py-0 min-w-[139px]" alt="DutchDestinations" />
+            </a>
+            <p class="flex justify-center text-xl ml-40 pt-5">©DutchDestinations 2023</p>
+        </div>
+    </footer>
+</body>
+</html>
