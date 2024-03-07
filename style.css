@@ -1,6 +1,7 @@
 body {
     padding: 0%;
     margin: 0%;
+    overflow-x: hidden;
 }
 
 .geeks {
@@ -282,4 +283,12 @@ https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
         right: 64px;
         background-color: white;
     }
+}
+
+#navbar-about {
+    overflow-y: hidden;
+}
+
+#alinea-4-about {
+    border-width: 12px;
 }
