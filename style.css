@@ -149,14 +149,14 @@ https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
 }
 
 #hr-twee {
-    height: 3px;
+    height: 2px;
     background-color: #828282;
 }
 
 
 @media (min-width: 1024px) {
     #alinea2{
-        background-color: #b300ff12;
+        background-color: #ff7316;
     }
 }
 
